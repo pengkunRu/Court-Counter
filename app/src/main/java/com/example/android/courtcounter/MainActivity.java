@@ -65,6 +65,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * the method is called when reset button is pressed
+     */
+    public void resetScore(View View){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
      * Display the given score for team A
      */
     private void displayForTeamA(int score){
